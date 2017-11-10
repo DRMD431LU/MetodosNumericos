@@ -36,8 +36,9 @@ x,y,z=symbols('x,y,z')
 #pprint(exp(sqrt(x))-(x**2)*log(x))
 
 #expr=sympify(10*exp(x/2)*cos(2*x)-4)
-pprint(expr)
+
 expr=sympify(exp(sqrt(x))-(x**2)*log(x))
+#pprint(expr)
 #print(solve(exp(sqrt(x))-(x**2)*log(x)))
 #print (fa(2,expr))
 #plot(expr)
@@ -58,7 +59,8 @@ def xr(a,b):
     return c;
 ''' 
 
-biseccion(0.1,4,expr,50)
+biseccion(0.1,4,expr,5)
+plot(expr)
 '''    
 xr=biseccion(1,2)
 if (fa(a) * fxr(xr)<0):
