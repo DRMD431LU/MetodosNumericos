@@ -6,7 +6,7 @@ Created on Tue Oct 31 17:26:02 2017
 """
 
 from tkinter import *
-
+from tkinter import messagebox
 from sympy import *
 from sympy import sympify
 from sympy.plotting import plot
@@ -28,7 +28,8 @@ def biseccion(a,b,expr,count):
         b=c
         biseccion(a,b,expr,count-1)
     else:
-        print("Ocurrio un error en las evaluaciones")
+        messagebox.erroralert("Ocurrio un error en las evaluaciones")
+        #print("Ocurrio un error en las evaluaciones")
         count=-1
 
 x,y,z=symbols('x,y,z')
