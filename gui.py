@@ -46,10 +46,10 @@ def pretty():
 #se crea un objeto Tk como raiz, con la configuracion de icono y fondo de pantalla    
 root = Tk()
 root.title("Métodos Númericos")
-root.iconbitmap('descarga.ico')
+root.iconbitmap('/imagenes/descarga.ico')
 root.config(bg="dodgerblue", bd="30", relief="sunken")   
         
-imagen = PhotoImage(file="plot.gif")
+imagen = PhotoImage(file="imagenes/plot.gif")
 
 #se definen las variables globales y a utilizar en la entrada y salida de la gui
 i=6
