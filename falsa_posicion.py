@@ -24,3 +24,4 @@ void Fa_Po() {
         }
     } else printf("Este metodo no puede aplicarse.\n");
 }
+ 
